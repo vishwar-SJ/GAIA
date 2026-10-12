@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'gaia_field_clip': {
       src: 'assets/videos/gaia_field_clip.mp4',
       title: 'Cauvery Wildlife Sanctuary - Live Field Deployment',
-      desc: 'Footage captured during the field deployment period at Anchetty Reserve Forest. Shows tree canopy installation of sensor nodes and real-time telemetry verification over an 8km LoRa transmission radius.',
+      desc: 'Footage captured during the field deployment period at Anchetty Reserve Forest. Shows tree canopy installation of sensor nodes and real-time telemetry verification over a 15km LoRa transmission radius.',
       badge: 'Field Deployment'
     },
     'wildfire': {
