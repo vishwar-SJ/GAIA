@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project GAIA Images | Field Deployments, Hardware & Wildlife Captures</title>
+  <meta name="description" content="Visual record of Project GAIA: field deployment in Cauvery Wildlife Sanctuary, hardware assembly at Sri Sai Ram Engineering College, LoRaWAN gateways, and camera traps.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link">
+        <img src="assets/images/logo.png" alt="GAIA Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">PROJECT GAIA</span>
+          <span class="brand-subtitle">Smart & Sustainable Forest • India</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">☰</button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Project</a></li>
+          <li><a href="gallery.html" class="nav-link active">Images</a></li>
+          <li><a href="videos.html" class="nav-link">Videos</a></li>
+          <li><a href="reports.html" class="nav-link">Field Reports</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="reports.html" class="nav-cta-btn">View Telemetry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section" style="padding-top: 5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-subtle); background: rgba(9, 15, 11, 0.5);">
+    <div class="container">
+      <div style="max-width: 800px;">
+        <span class="badge-pill" style="margin-bottom: 1rem;">
+          <span class="badge-pulse"></span>
+          Field Visual Evidence & Lab Archive
+        </span>
+        <h1 style="margin-bottom: 1rem;">Project Visual Gallery</h1>
+        <p style="font-size: 1.15rem; color: #cbd5e1;">
+          Photographic documentation of our hardware fabrication, field deployments in Cauvery Wildlife Sanctuary, LoRa antenna installations, 3D digital twining scans, and camera trap validation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Filter Tags -->
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-filter="all">All Photos (16)</button>
+        <button class="filter-btn" data-filter="field">Field Deployments</button>
+        <button class="filter-btn" data-filter="hardware">Hardware & Lab</button>
+        <button class="filter-btn" data-filter="cameratrap">Camera Traps & AI</button>
+        <button class="filter-btn" data-filter="maps">Maps & 3D Twins</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- 1. Team in Forest -->
+        <div class="gallery-item" data-category="field" data-desc="Sri Sai Ram Engineering College student team wearing EPICS in IEEE jerseys on site in Cauvery Wildlife Sanctuary, Anchetty R.F, Tamil Nadu.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/team_forest_field.jpg" alt="Team Field Deployment in Forest" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Field Deployment</div>
+            <div class="gallery-title">Engineering Team at Cauvery Sanctuary</div>
+          </div>
+        </div>
+
+        <!-- 2. Team Lab Hardware -->
+        <div class="gallery-item" data-category="hardware" data-desc="Hardware development lead Thivyadharshini and BMS engineer Kanmanni soldering and calibrating WisBlock sensors and battery protection circuits in the laboratory.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/team_lab_hardware.jpg" alt="Lab Hardware Integration" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Hardware & Lab</div>
+            <div class="gallery-title">WisBlock & BMS Circuit Prototyping</div>
+          </div>
+        </div>
+
+        <!-- 3. Gateway Antenna Mast -->
+        <div class="gallery-item" data-category="field" data-desc="Dual 5.8 dBi high-gain omnidirectional LoRa antennas mounted on high elevation mast for forest-wide coverage over an 8km transmission radius.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/gateway_antenna.jpg" alt="Gateway LoRa Antenna Mast" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Field Deployment</div>
+            <div class="gallery-title">5.8 dBi High-Gain Gateway Mast</div>
+          </div>
+        </div>
+
+        <!-- 4. CT 001 - Orion Tree Mount -->
+        <div class="gallery-item" data-category="field" data-desc="Camera Trap 001 (CT-Orion) affixed to a mature forest tree in Anchetty Reserve Forest (GPS: 12°18'38.30''N, 77°46'36.29''E).">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/field_node_orion.jpg" alt="CT 001 Orion Tree Mount" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Field Deployment</div>
+            <div class="gallery-title">CT 001 - Orion Tree Mount</div>
+          </div>
+        </div>
+
+        <!-- 5. CT 002 - Sirius Tree Mount -->
+        <div class="gallery-item" data-category="field" data-desc="Camera Trap 002 (CT-Sirius) deployed for video, image, and PIR movement capture (GPS: 12°18'38.70''N, 77°46'35.19''E) operating for 13+ hours.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/field_node_sirius.jpg" alt="CT 002 Sirius Tree Mount" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Field Deployment</div>
+            <div class="gallery-title">CT 002 - Sirius Tree Mount</div>
+          </div>
+        </div>
+
+        <!-- 6. Field Tree Sensor Mount -->
+        <div class="gallery-item" data-category="field" data-desc="High-canopy atmospheric node strapped securely to forest tree to monitor temperature, humidity, pressure, and gas indices without disturbing wildlife.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/field_tree_sensor_mount.jpg" alt="Canopy Sensor Node" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Field Deployment</div>
+            <div class="gallery-title">High-Canopy Sensor Installation</div>
+          </div>
+        </div>
+
+        <!-- 7. IoT Weatherproof Enclosure -->
+        <div class="gallery-item" data-category="hardware" data-desc="Weatherproof IP-rated enclosure designed to shield Raspberry Pi Zero 2 W, Sony IMX AI camera, and LiFePO4 batteries from monsoon rain and humidity.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/iot_node_enclosure.jpg" alt="IoT Enclosure Design" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Hardware & Lab</div>
+            <div class="gallery-title">Ruggedized Weatherproof Enclosure</div>
+          </div>
+        </div>
+
+        <!-- 8. Sensor Circuit Box -->
+        <div class="gallery-item" data-category="hardware" data-desc="Internal electronics arrangement featuring RAK WisBlock Base Board, BME680, 6-axis accelerometer, and MP1584 buck converter with safety fuse.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/sensor_circuit_box.jpg" alt="Sensor Circuit Box" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Hardware & Lab</div>
+            <div class="gallery-title">Modular WisBlock Electronics Stack</div>
+          </div>
+        </div>
+
+        <!-- 9. Hardware Bench Assembly 1 -->
+        <div class="gallery-item" data-category="hardware" data-desc="Bench testing and battery pack calibration of 2S LiFePO4 32650 cells for Raspberry Pi nodes.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/hardware_assembly_1.jpg" alt="Hardware Assembly 1" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Hardware & Lab</div>
+            <div class="gallery-title">LiFePO4 BMS Wiring & Assembly</div>
+          </div>
+        </div>
+
+        <!-- 10. Hardware Bench Assembly 2 -->
+        <div class="gallery-item" data-category="hardware" data-desc="Integration of MP1584 DC-DC 3A buck converter and 1.5A slow-blow safety fuse to protect the embedded compute boards from transients.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/hardware_assembly_2.jpg" alt="Hardware Assembly 2" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Hardware & Lab</div>
+            <div class="gallery-title">Power Converter & Fuse Protection</div>
+          </div>
+        </div>
+
+        <!-- 11. Hardware Bench Assembly 3 -->
+        <div class="gallery-item" data-category="hardware" data-desc="WisBlock LoRa transceiver validation and OTAA join test with the RAK gateway before forest transport.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/hardware_assembly_3.jpg" alt="Hardware Assembly 3" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Hardware & Lab</div>
+            <div class="gallery-title">WisBlock OTAA Transmission Test</div>
+          </div>
+        </div>
+
+        <!-- 12. Deployment Map & Topography -->
+        <div class="gallery-item" data-category="maps" data-desc="Google Earth topographic mapping and GPS coordinate validation showing distance between RAK Gateway and nodes (CT 001, CT 002, Sensor Node).">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/deployment_map_topography.jpg" alt="Topographic Deployment Map" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Maps & 3D Twins</div>
+            <div class="gallery-title">Cauvery Sanctuary Topography & GPS</div>
+          </div>
+        </div>
+
+        <!-- 13. Digital Twin 3D Scan -->
+        <div class="gallery-item" data-category="maps" data-desc="3D digital twining simulation model: 3D point cloud scans of forest trees, elevation contours, and canopy density to optimize camera trap viewing angles.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/digital_twin_3d_simulation.jpg" alt="3D Digital Twin Simulation" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Maps & 3D Twins</div>
+            <div class="gallery-title">3D Digital Twin Forest Simulation</div>
+          </div>
+        </div>
+
+        <!-- 14. Elevation Profile Map -->
+        <div class="gallery-item" data-category="maps" data-desc="Terrain elevation contour map showing altitude differentials between gateway station and forest deployment sites.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/map1.png" alt="Elevation Profile Map" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Maps & 3D Twins</div>
+            <div class="gallery-title">LoRa Link Elevation Profile</div>
+          </div>
+        </div>
+
+        <!-- 15. Camera Trap Validation 1 -->
+        <div class="gallery-item" data-category="cameratrap" data-desc="Daytime test capture verifying 2066 x 1536 resolution and PIR motion-triggered recording clarity through dense forest foliage.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/forest_cameratrap_sample1.jpg" alt="Camera Trap Daytime Capture" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Camera Traps & AI</div>
+            <div class="gallery-title">Camera Trap 2066x1536 Daytime Frame</div>
+          </div>
+        </div>
+
+        <!-- 16. Cloud Console Telemetry -->
+        <div class="gallery-item" data-category="cameratrap" data-desc="The Things Stack (TTS) console showing active live uplink data streams from gaia-orion and gaia-sirius over Airtel 4G cellular bridge.">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/gateway_cloud_console.jpg" alt="The Things Stack Cloud Console" loading="lazy">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Camera Traps & AI</div>
+            <div class="gallery-title">The Things Stack Cloud Uplink Console</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close modal">&times;</button>
+    <button class="lightbox-close" id="lightboxPrev" style="right: auto; left: 1.5rem;" aria-label="Previous image">&#10094;</button>
+    <button class="lightbox-close" id="lightboxNext" style="right: 5rem;" aria-label="Next image">&#10095;</button>
+    
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Enlarged view">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-link">
+            <img src="assets/images/logo.png" alt="GAIA Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-title">PROJECT GAIA</span>
+              <span class="brand-subtitle">Smart Forest Monitoring • India</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            An IEEE EPICS funded smart forest protection solution combining Edge AI vision, WisBlock sensors, and LoRaWAN connectivity.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="gallery.html">Project Images</a></li>
+            <li><a href="videos.html">Demonstration Videos</a></li>
+            <li><a href="reports.html">Field Deployment Reports</a></li>
+            <li><a href="team.html">Engineering Team</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Downloads</div>
+          <ul class="footer-links">
+            <li><a href="assets/docs/GAIA_Field_Deployment_Report.pdf" download>Field Deployment Report (PDF)</a></li>
+            <li><a href="assets/docs/GAIA_Students_Report.pdf" download>Student Technical Report (PDF)</a></li>
+            <li><a href="assets/docs/REPORT-IEEE-GAIA.pdf" download>Full IEEE EPICS Dossier (PDF)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Student Leadership</div>
+          <div style="font-size: 0.9rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.5rem;">
+            <div><strong>Vishwar S J</strong> (Team Lead)</div>
+            <div style="color: var(--text-muted);">Sri Sai Ram Engineering College, Chennai</div>
+            <div>📞 <a href="tel:9342384995" style="color: var(--accent-neon);">+91 9342384995</a></div>
+            <div>✉ <a href="mailto:vishwarvishwar6@gmail.com" style="color: var(--accent-neon);">vishwarvishwar6@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Project GAIA: Smart and Sustainable Forest – INDIA. Supported by EPICS in IEEE.</div>
+        <div style="color: var(--accent-light);">Sri Sai Ram Engineering College Student Branch, Chennai</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

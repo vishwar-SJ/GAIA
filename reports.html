@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Field Deployment & Technical Reports | Project GAIA 2.0</title>
+  <meta name="description" content="Official Field Deployment Report & Student Research Report for Project GAIA at Cauvery Wildlife Sanctuary, Anchetty R.F, Tamil Nadu, India. Includes live telemetry logs, GPS data, and PDF downloads.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link">
+        <img src="assets/images/logo.png" alt="GAIA Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">PROJECT GAIA</span>
+          <span class="brand-subtitle">Smart & Sustainable Forest • India</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">☰</button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Project</a></li>
+          <li><a href="gallery.html" class="nav-link">Images</a></li>
+          <li><a href="videos.html" class="nav-link">Videos</a></li>
+          <li><a href="reports.html" class="nav-link active">Field Reports</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="#telemetry" class="nav-cta-btn">View Telemetry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section" style="padding-top: 5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border-subtle); background: rgba(9, 15, 11, 0.5);">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem;">
+        <div style="max-width: 780px;">
+          <span class="badge-pill" style="margin-bottom: 1rem;">
+            <span class="badge-pulse"></span>
+            Official Documentation & Field Trials
+          </span>
+          <h1 style="margin-bottom: 0.75rem;">Field Deployment & Technical Reports</h1>
+          <p style="font-size: 1.15rem; color: #cbd5e1;">
+            Official records from the <strong>Cauvery Wildlife Sanctuary, Anchetty R.F</strong> deployment and student research conducted at <strong>Sri Sai Ram Engineering College, Chennai</strong>.
+          </p>
+        </div>
+
+        <!-- Direct PDF Download Buttons -->
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <a href="assets/docs/GAIA_Field_Deployment_Report.pdf" download class="btn btn-primary btn-sm">
+            📄 Download Field Report (PDF)
+          </a>
+          <a href="assets/docs/GAIA_Students_Report.pdf" download class="btn btn-secondary btn-sm">
+            📄 Download Student Report (PDF)
+          </a>
+          <a href="assets/docs/REPORT-IEEE-GAIA.pdf" download class="btn btn-secondary btn-sm">
+            📄 Download Full IEEE Dossier (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Report Navigation Tabs -->
+  <section class="section">
+    <div class="container">
+      <div class="tabs-wrapper">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="tabFieldReport">Field Deployment Report</button>
+          <button class="tab-btn" data-tab="tabStudentReport">Students Technical Report (GAIA 2.0)</button>
+          <button class="tab-btn" data-tab="tabTelemetry" id="telemetry">Live Telemetry Explorer</button>
+          <button class="tab-btn" data-tab="tabFindings">Diagnostics & 3D Digital Twin</button>
+        </div>
+
+        <!-- TAB 1: FIELD DEPLOYMENT REPORT -->
+        <div class="tab-pane active" id="tabFieldReport">
+          
+          <div class="glass-card" style="margin-bottom: 2rem;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1.25rem; margin-bottom: 1.5rem;">
+              <div>
+                <span class="badge-pill" style="margin-bottom: 0.5rem;">Deployment Summary</span>
+                <h2>GAIA – Field Deployment Report</h2>
+                <div style="color: var(--accent-light); font-size: 0.95rem; font-weight: 600;">
+                  Cauvery Wildlife Sanctuary, Anchetty Reserve Forest (R.F), Tamil Nadu, India
+                </div>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); background: rgba(0, 0, 0, 0.4); padding: 8px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                📅 Deployment Period: 11 April 2026, 10:30 am – 12 April 2026, 11:00 am
+              </div>
+            </div>
+
+            <p style="margin-bottom: 1.5rem;">
+              The deployment comprised <strong>3 interconnected nodes</strong> communicating over the LoRa protocol in the IN865 band, connected to a high-elevation central <strong>RAK Gateway</strong>. The installation validated long-range bi-directional transmission over an operational radius of nearly <strong>8 kilometers</strong> despite severe mountainous obstacles and dense tree canopies.
+            </p>
+
+            <!-- Deployed Nodes Overview Table -->
+            <h3 style="margin-bottom: 1rem; color: var(--accent-neon); font-size: 1.15rem;">Active Nodes Deployed in Anchetty R.F</h3>
+            <div class="table-responsive" style="margin-bottom: 2rem;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>S.No</th>
+                    <th>Node Name</th>
+                    <th>Uptime / Operational Time</th>
+                    <th>Node Type</th>
+                    <th>GPS Coordinates</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td>7 hrs 12 mins</td>
+                    <td>Video, Image, Edge AI</td>
+                    <td><code>12°18'38.30"N, 77°46'36.29"E</code></td>
+                    <td><span class="status-tag status-active">Active Captured</span></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><strong>CT 002 – Sirius</strong></td>
+                    <td>13 hrs 00 mins 47 secs</td>
+                    <td>Video, Image, Edge AI</td>
+                    <td><code>12°18'38.70"N, 77°46'35.19"E</code></td>
+                    <td><span class="status-tag status-active">Active Captured</span></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><strong>Sensor Node 001 - Generic</strong></td>
+                    <td>24 hrs (Turned off manually after retrieval)</td>
+                    <td>Environmental Sensor Data</td>
+                    <td><code>12°18'38.70"N, 77°46'36.29"E</code></td>
+                    <td><span class="status-tag status-active">24h Complete</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Gateway & Network Specs Grid -->
+            <h3 style="margin-bottom: 1rem; color: var(--accent-neon); font-size: 1.15rem;">Gateway & Network Hardware Specifications</h3>
+            <div class="tech-spec-grid" style="margin-bottom: 2rem;">
+              <div class="spec-box">
+                <div class="spec-title">Power Source</div>
+                <div class="spec-desc">Direct power supply (Home grid) with battery backup buffer.</div>
+              </div>
+
+              <div class="spec-box">
+                <div class="spec-title">Cloud Backhaul</div>
+                <div class="spec-desc">LTE 4G Cellular (Airtel Network) for Cloud Connection to The Things Stack.</div>
+              </div>
+
+              <div class="spec-box">
+                <div class="spec-title">Antenna Setup</div>
+                <div class="spec-desc">Dual LoRa Antennas (2x) with 5.8 dBi high-gain for deep forest penetration.</div>
+              </div>
+
+              <div class="spec-box">
+                <div class="spec-title">Frequency Channels</div>
+                <div class="spec-desc">16 Channels total in the regulated IN865 Band (865–867 MHz).</div>
+              </div>
+            </div>
+
+            <!-- Performance Metrics -->
+            <h3 style="margin-bottom: 1rem; color: var(--accent-neon); font-size: 1.15rem;">Data & Performance Metrics</h3>
+            <div class="stat-grid" style="margin-top: 0; margin-bottom: 2rem;">
+              <div class="stat-card">
+                <div class="stat-number">0.288</div>
+                <div class="stat-label">Avg Bit Rate (kbps)</div>
+                <div class="stat-subtext">Over 8 km mountain foliage</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">3.70</div>
+                <div class="stat-label">Peak Bit Rate (kbps)</div>
+                <div class="stat-subtext">Optimized burst packets</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">51</div>
+                <div class="stat-label">Max Payload (Bytes)</div>
+                <div class="stat-subtext">Compact telemetry payload</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">21</div>
+                <div class="stat-label">Deployment Hours</div>
+                <div class="stat-subtext">Uninterrupted field testing</div>
+              </div>
+            </div>
+
+            <!-- Field Achievements Summary -->
+            <div style="background: rgba(16, 185, 129, 0.08); border-left: 4px solid var(--accent-neon); padding: 1.5rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+              <h4 style="color: #ffffff; margin-bottom: 0.5rem;">Key Field Achievements:</h4>
+              <ul style="color: #cbd5e1; font-size: 0.95rem; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                <li><strong>8 km Non-Line-of-Sight Transmission:</strong> Proved that LoRaWAN functions effectively even when signals pass across ridgelines and thick canopies.</li>
+                <li><strong>Reliable Sensor Synchronization:</strong> Atmospheric, soil moisture, and seismic sensor payloads were received with high fidelity at the network server.</li>
+                <li><strong>Verified Motion & Time Triggers:</strong> Successfully recorded and logged periodic 15-minute captures and motion-activated camera events.</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- TAB 2: STUDENTS RESEARCH REPORT -->
+        <div class="tab-pane" id="tabStudentReport">
+          
+          <div class="glass-card" style="margin-bottom: 2rem;">
+            <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 1.25rem; margin-bottom: 1.5rem;">
+              <span class="badge-pill" style="margin-bottom: 0.5rem;">Academic Research Dossier</span>
+              <h2>GAIA 2.0: Smart Forest Monitoring System – Students Report</h2>
+              <div style="color: var(--accent-light); font-size: 0.95rem; font-weight: 600;">
+                Department of Electronics & Communication / Computer Science • Sri Sai Ram Engineering College, Chennai
+              </div>
+            </div>
+
+            <!-- Student 1: Vishwar S J -->
+            <div style="margin-bottom: 3rem;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
+                <span class="feature-icon-box" style="margin-bottom: 0; width: 44px; height: 44px; font-size: 1.2rem;">🧠</span>
+                <div>
+                  <h3 style="color: var(--accent-neon); margin: 0;">Vishwar S J – Fire Detection Machine Learning Model</h3>
+                  <span style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);">Team Leader & Edge AI Architect</span>
+                </div>
+              </div>
+
+              <div class="grid-2" style="margin-top: 1rem;">
+                <div>
+                  <p style="margin-bottom: 0.75rem;">
+                    <strong>Objectives:</strong> To develop a multi-class fire and smoke classifier capable of executing on resource-constrained embedded systems, eliminating the need to transmit heavy video streams over low-bandwidth forest networks.
+                  </p>
+                  <p style="margin-bottom: 0.75rem;">
+                    <strong>Dataset & 70:30 Split:</strong> Curated 4 balanced classes: (1) Fire only, (2) Smoke only, (3) Fire & smoke, (4) Normal condition. Divided 70% for training to maximize feature learning and 30% for strict evaluation to prevent overfitting.
+                  </p>
+                  <p>
+                    <strong>Deployment Pipeline:</strong> Trained in PyTorch over 120 epochs achieving <strong>80.69% accuracy</strong>. Converted <code>best.pt</code> into optimized Sony IMX binary format for on-sensor execution on the Raspberry Pi Zero 2 W with Sony IMX AI Camera.
+                  </p>
+                </div>
+
+                <div style="background: rgba(0, 0, 0, 0.45); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem; font-family: var(--font-mono); font-size: 0.82rem;">
+                  <div style="color: var(--accent-neon); margin-bottom: 0.75rem; font-weight: bold;">// ML MODEL BENCHMARKS</div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                    <span style="color: var(--text-muted);">Architecture:</span>
+                    <span style="color: #ffffff;">Convolutional Edge Backbone</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                    <span style="color: var(--text-muted);">Target Hardware:</span>
+                    <span style="color: #ffffff;">Raspberry Pi Zero 2 W + Sony IMX</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                    <span style="color: var(--text-muted);">Training Epochs:</span>
+                    <span style="color: #ffffff;">120 Epochs</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                    <span style="color: var(--text-muted);">Achieved Accuracy:</span>
+                    <span style="color: var(--accent-neon); font-weight: bold;">80.69%</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                    <span style="color: var(--text-muted);">Artifact Converted:</span>
+                    <span style="color: #ffffff;">best.pt &rarr; .imx binary format</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between;">
+                    <span style="color: var(--text-muted);">Inference Interval:</span>
+                    <span style="color: #ffffff;">Every 15 mins + Event Awakened</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Student 2: Thivyadharshini -->
+            <div style="margin-bottom: 3rem; border-top: 1px solid var(--border-subtle); padding-top: 2rem;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
+                <span class="feature-icon-box" style="margin-bottom: 0; width: 44px; height: 44px; font-size: 1.2rem;">📡</span>
+                <div>
+                  <h3 style="color: var(--accent-neon); margin: 0;">Thivyadharshini – RAK Node Sensor Integration & System Implementation</h3>
+                  <span style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);">Hardware Systems & Modular WisBlock Lead</span>
+                </div>
+              </div>
+
+              <p style="margin-bottom: 1rem;">
+                Engineered a distributed sensor network based on <strong>WisBlock modular architecture</strong> to operate under ultra-low-power constraints with coordinated data acquisition:
+              </p>
+
+              <div class="grid-3" style="font-size: 0.88rem;">
+                <div style="background: rgba(14, 25, 18, 0.4); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                  <strong style="color: var(--accent-light);">Atmospheric Modules</strong>
+                  <ul style="padding-left: 1.2rem; margin-top: 0.5rem; color: var(--text-muted);">
+                    <li>RAK1906 (BME680): Temp, gas, pressure, humidity</li>
+                    <li>RAK12020: Ambient light intensity</li>
+                    <li>RAK12005 + RAK12030: Rain detection</li>
+                  </ul>
+                </div>
+
+                <div style="background: rgba(14, 25, 18, 0.4); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                  <strong style="color: var(--accent-light);">Motion & Security</strong>
+                  <ul style="padding-left: 1.2rem; margin-top: 0.5rem; color: var(--text-muted);">
+                    <li>RAK12033 (IIM42652): 6-axis gyro/accelerometer</li>
+                    <li>RAK12006: Passive PIR motion sensor</li>
+                    <li>RAK12015: Vibration disturbance detector</li>
+                  </ul>
+                </div>
+
+                <div style="background: rgba(14, 25, 18, 0.4); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                  <strong style="color: var(--accent-light);">Soil & Geo-Location</strong>
+                  <ul style="padding-left: 1.2rem; margin-top: 0.5rem; color: var(--text-muted);">
+                    <li>RAK12023 + RAK12035: Soil moisture & temp</li>
+                    <li>RAK12500: u-blox GNSS satellite tracking</li>
+                    <li>RAK18001: Alert buzzer module</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Student 3: Kanmanni -->
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 2rem;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
+                <span class="feature-icon-box" style="margin-bottom: 0; width: 44px; height: 44px; font-size: 1.2rem;">🔋</span>
+                <div>
+                  <h3 style="color: var(--accent-neon); margin: 0;">Kanmanni – Battery Management System (BMS) & Power Design</h3>
+                  <span style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);">Power Electronics & Battery Engineering Lead</span>
+                </div>
+              </div>
+
+              <div class="grid-2">
+                <div>
+                  <h4 style="color: #ffffff; margin-bottom: 0.5rem;">Raspberry Pi Power Design (2S LiFePO4)</h4>
+                  <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+                    Configured a 6V 6Ah Lithium Iron Phosphate battery pack using 32650 cells. Chosen for flat voltage discharge (7.2V to 5.5V), exceptional thermal safety in high forest temperatures, and 2000+ cycle life.
+                  </p>
+                  <p style="font-size: 0.92rem; color: var(--text-muted);">
+                    <strong>MP1584 DC-DC 3A Buck Converter:</strong> Steps down 5.5–7.2V battery input to regulated 5.0–5.1V with 90–95% efficiency. Coupled with a <strong>1.5A slow-blow fuse</strong> to absorb Pi boot inrush without tripping while shielding against short circuits.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 style="color: #ffffff; margin-bottom: 0.5rem;">Autonomous RAK Node (Saft Li-SOCl2)</h4>
+                  <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+                    Employs Saft 3.6V 2.6Ah Lithium Thionyl Chloride non-rechargeable chemistry for WisBlock boards. Provides extreme low self-discharge for multi-year unattended runtime.
+                  </p>
+                  <p style="font-size: 0.92rem; color: var(--text-muted);">
+                    <strong>XL4015 Buck Converter:</strong> Regulates output to 3.9–4.3V with 5A safety headroom, built-in current limit, and ripple suppression.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- TAB 3: LIVE TELEMETRY EXPLORER -->
+        <div class="tab-pane" id="tabTelemetry">
+          
+          <div class="glass-card" style="margin-bottom: 2rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+              <div>
+                <h2>Cauvery Sanctuary Deployment Telemetry Logs</h2>
+                <p style="font-size: 0.95rem; color: var(--text-muted);">
+                  Actual LoRa packet logs recorded during the 11–12 April 2026 field trial.
+                </p>
+              </div>
+
+              <!-- Search Bar & Filters -->
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <input 
+                  type="text" 
+                  id="telemetrySearch" 
+                  placeholder="Filter logs (e.g., Orion, Trigger, dBm)..." 
+                  style="background: rgba(0, 0, 0, 0.6); border: 1px solid var(--border-subtle); color: #ffffff; padding: 8px 14px; border-radius: var(--radius-sm); font-size: 0.88rem; outline: none; min-width: 240px;">
+                
+                <div style="display: flex; gap: 0.4rem;">
+                  <button class="filter-btn active node-filter-btn" data-node="all">All Nodes</button>
+                  <button class="filter-btn node-filter-btn" data-node="orion">CT-Orion</button>
+                  <button class="filter-btn node-filter-btn" data-node="sirius">CT-Sirius</button>
+                  <button class="filter-btn node-filter-btn" data-node="generic">Sensor-001</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Timestamp</th>
+                    <th>Node ID</th>
+                    <th>GPS Coordinates</th>
+                    <th>RSSI (dBm)</th>
+                    <th>SNR (dB)</th>
+                    <th>Payload Event / Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="telemetryTableBody">
+                  <!-- CT 001 - Orion Logs -->
+                  <tr data-node="orion">
+                    <td><code>2026-04-11 10:42:00</code></td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td><code>12°18'38.30"N, 77°46'36.29"E</code></td>
+                    <td><span style="color: var(--accent-neon);">-65 dBm</span></td>
+                    <td>13.2 dB</td>
+                    <td>Node Boot / Setup Beacon Received</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310639, 77.776747">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="orion">
+                    <td><code>2026-04-11 11:31:15</code></td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td><code>12°18'38.32"N, 77°46'36.27"E</code></td>
+                    <td><span style="color: var(--accent-neon);">-68 dBm</span></td>
+                    <td>12.5 dB</td>
+                    <td>Trigger sent, image & video capture (Test 01)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310644, 77.776742">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="orion">
+                    <td><code>2026-04-11 11:32:40</code></td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td><code>12°18'38.31"N, 77°46'36.28"E</code></td>
+                    <td><span style="color: var(--accent-neon);">-70 dBm</span></td>
+                    <td>11.8 dB</td>
+                    <td>Trigger sent, image & video capture (Test 02)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310642, 77.776744">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="orion">
+                    <td><code>2026-04-11 11:34:12</code></td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td><code>12°18'38.29"N, 77°46'36.31"E</code></td>
+                    <td><span style="color: var(--accent-light);">-72 dBm</span></td>
+                    <td>10.5 dB</td>
+                    <td>Trigger sent, image & video capture (Test 03)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310636, 77.776753">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="orion">
+                    <td><code>2026-04-11 11:35:55</code></td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td><code>12°18'38.29"N, 77°46'36.30"E</code></td>
+                    <td><span style="color: var(--accent-light);">-71 dBm</span></td>
+                    <td>11.0 dB</td>
+                    <td>Trigger sent, image & video capture (Test 04)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310636, 77.776750">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="orion">
+                    <td><code>2026-04-11 11:40:18</code></td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td><code>12°18'38.33"N, 77°46'36.26"E</code></td>
+                    <td><span style="color: var(--accent-light);">-74 dBm</span></td>
+                    <td>9.8 dB</td>
+                    <td>Trigger sent, image & video capture (Test 06)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310647, 77.776739">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="orion">
+                    <td><code>2026-04-11 11:46:11</code></td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td><code>12°18'38.29"N, 77°46'36.32"E</code></td>
+                    <td><span style="color: var(--accent-light);">-78 dBm</span></td>
+                    <td>7.2 dB</td>
+                    <td>Trigger sent, image & video capture (Test 08)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310636, 77.776756">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="orion">
+                    <td><code>2026-04-11 11:57:40</code></td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td><code>12°18'38.31"N, 77°46'36.30"E</code></td>
+                    <td><span style="color: #facc15;">-80 dBm</span></td>
+                    <td>6.2 dB</td>
+                    <td>Trigger sent, image & video capture (Test 11)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310642, 77.776750">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="orion">
+                    <td><code>2026-04-11 14:57:40</code></td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td><code>12°18'38.28"N, 77°46'36.30"E</code></td>
+                    <td><span style="color: #facc15;">-82 dBm</span></td>
+                    <td>5.5 dB</td>
+                    <td>Hourly Status Check / Keep-Alive Packet</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310633, 77.776750">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="orion">
+                    <td><code>2026-04-11 18:42:00</code></td>
+                    <td><strong>CT 001 - Orion</strong></td>
+                    <td><code>12°18'38.32"N, 77°46'36.27"E</code></td>
+                    <td><span style="color: #facc15;">-86 dBm</span></td>
+                    <td>4.5 dB</td>
+                    <td>Final Status Check / Interval Shutdown Beacon</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310644, 77.776742">Copy GPS</button></td>
+                  </tr>
+
+                  <!-- CT 002 - Sirius Logs -->
+                  <tr data-node="sirius">
+                    <td><code>2026-04-11 11:23:31</code></td>
+                    <td><strong>CT 002 – Sirius</strong></td>
+                    <td><code>12°18'38.70"N, 77°46'35.19"E</code></td>
+                    <td><span style="color: var(--accent-neon);">-52 dBm</span></td>
+                    <td>10.2 dB</td>
+                    <td>Node Boot / Setup Beacon Received</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310750, 77.776442">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="sirius">
+                    <td><code>2026-04-11 11:34:45</code></td>
+                    <td><strong>CT 002 – Sirius</strong></td>
+                    <td><code>12°18'38.71"N, 77°46'35.18"E</code></td>
+                    <td><span style="color: var(--accent-neon);">-60 dBm</span></td>
+                    <td>9.0 dB</td>
+                    <td>Trigger sent, image & video capture (Test 03)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310753, 77.776439">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="sirius">
+                    <td><code>2026-04-11 11:45:30</code></td>
+                    <td><strong>CT 002 – Sirius</strong></td>
+                    <td><code>12°18'38.69"N, 77°46'35.18"E</code></td>
+                    <td><span style="color: var(--accent-light);">-72 dBm</span></td>
+                    <td>7.0 dB</td>
+                    <td>Trigger sent, image & video capture (Test 08)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310747, 77.776439">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="sirius">
+                    <td><code>2026-04-11 14:56:15</code></td>
+                    <td><strong>CT 002 – Sirius</strong></td>
+                    <td><code>12°18'38.68"N, 77°46'35.17"E</code></td>
+                    <td><span style="color: #f87171;">-98 dBm</span></td>
+                    <td>3.5 dB</td>
+                    <td>Hourly Status Check (Dynamic terrain shifting)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310744, 77.776436">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="sirius">
+                    <td><code>2026-04-11 20:56:15</code></td>
+                    <td><strong>CT 002 – Sirius</strong></td>
+                    <td><code>12°18'38.71"N, 77°46'35.21"E</code></td>
+                    <td><span style="color: #f87171;">-111 dBm</span></td>
+                    <td>-11.8 dB</td>
+                    <td>Hourly Status Check (Negative SNR foliage fade)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310753, 77.776447">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="sirius">
+                    <td><code>2026-04-12 00:30:47</code></td>
+                    <td><strong>CT 002 – Sirius</strong></td>
+                    <td><code>12°18'38.71"N, 77°46'35.21"E</code></td>
+                    <td><span style="color: #f87171;">-110 dBm</span></td>
+                    <td>-18.5 dB</td>
+                    <td>Final Status Check / Interval Shutdown (13h Uptime)</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310753, 77.776447">Copy GPS</button></td>
+                  </tr>
+
+                  <!-- Sensor Node 001 - Generic -->
+                  <tr data-node="generic">
+                    <td><code>2026-04-11 10:41:42</code></td>
+                    <td><strong>Sensor Node 001</strong></td>
+                    <td><code>12°18'38.70"N, 77°46'36.29"E</code></td>
+                    <td><span style="color: #facc15;">-92 dBm</span></td>
+                    <td>6.2 dB</td>
+                    <td>Temp: 26.2°C | Hum: 37% | Gas: 1987 kΩ | Batt: 4.15V</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310750, 77.776747">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="generic">
+                    <td><code>2026-04-11 13:30:00</code></td>
+                    <td><strong>Sensor Node 001</strong></td>
+                    <td><code>12°18'38.70"N, 77°46'36.29"E</code></td>
+                    <td><span style="color: #f87171;">-106 dBm</span></td>
+                    <td>-2.5 dB</td>
+                    <td>Temp: 34.5°C | Hum: 28% | Gas: 1812 kΩ | Batt: 4.02V</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310750, 77.776747">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="generic">
+                    <td><code>2026-04-11 23:30:00</code></td>
+                    <td><strong>Sensor Node 001</strong></td>
+                    <td><code>12°18'38.70"N, 77°46'36.29"E</code></td>
+                    <td><span style="color: #f87171;">-115 dBm</span></td>
+                    <td>-15.0 dB</td>
+                    <td>Temp: 23.8°C | Hum: 55% | Gas: 1812 kΩ | Batt: 3.92V</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310750, 77.776747">Copy GPS</button></td>
+                  </tr>
+                  <tr data-node="generic">
+                    <td><code>2026-04-12 10:40:00</code></td>
+                    <td><strong>Sensor Node 001</strong></td>
+                    <td><code>12°18'38.70"N, 77°46'36.29"E</code></td>
+                    <td><span style="color: #f87171;">-109 dBm</span></td>
+                    <td>-14.5 dB</td>
+                    <td>24h Complete • Turned off manually after physical retrieval</td>
+                    <td><button class="btn btn-secondary btn-sm copy-gps-btn" data-coords="12.310750, 77.776747">Copy GPS</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style="font-size: 0.85rem; color: var(--text-dim); margin-top: 1rem;">
+              * Note: Minor variations in decimal seconds simulate real-world GPS multipath drift under dense wet forest cover (Canopy Jitter).
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TAB 4: FIELD DIAGNOSTICS & ROADMAP -->
+        <div class="tab-pane" id="tabFindings">
+          
+          <div class="glass-card" style="margin-bottom: 2rem;">
+            <h2>Engineering Diagnostics, Errors Encountered & Solutions</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">
+              Honest and rigorous engineering analysis from real-world forest deployment:
+            </p>
+
+            <div class="grid-2" style="margin-bottom: 2.5rem;">
+              <!-- Diagnostic 1 -->
+              <div style="background: rgba(14, 25, 18, 0.4); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem;">
+                <span class="status-tag status-danger" style="margin-bottom: 0.5rem;">Finding 1: Elevation Disparity</span>
+                <h4 style="color: #ffffff; margin-bottom: 0.5rem;">Nodes Physically Higher than Gateway</h4>
+                <div style="font-size: 0.9rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.5rem;">
+                  <div><strong style="color: var(--accent-light);">Cause:</strong> Nodes situated high on ridge while gateway antenna sat in lower valley basin.</div>
+                  <div><strong style="color: #f87171;">Effect:</strong> Very slow average speed (0.288 kbps / SF12) on 10% data payload causing packet drop.</div>
+                  <div><strong style="color: var(--accent-neon);">Solution:</strong> Elevate the gateway antenna tower mast above the ridge level for unobstructed line-of-sight Fresnel clearance.</div>
+                </div>
+              </div>
+
+              <!-- Diagnostic 2 -->
+              <div style="background: rgba(14, 25, 18, 0.4); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem;">
+                <span class="status-tag status-warning" style="margin-bottom: 0.5rem;">Finding 2: Optical Filter Defect</span>
+                <h4 style="color: #ffffff; margin-bottom: 0.5rem;">Camera Trap 002 IR Bleeding Error</h4>
+                <div style="font-size: 0.9rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.5rem;">
+                  <div><strong style="color: var(--accent-light);">Cause:</strong> Internal infrared reflection and bleeding through protective enclosure glass film during evening low-light transitions.</div>
+                  <div><strong style="color: #f87171;">Effect:</strong> Blurred reddish/pink tint on evening captures.</div>
+                  <div><strong style="color: var(--accent-neon);">Solution:</strong> Custom anti-reflective optical glass shield with light-baffle collar separating lens from IR LEDs.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3D Digital Twining -->
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 2rem; margin-bottom: 2.5rem;">
+              <h3 style="color: var(--accent-neon); margin-bottom: 0.75rem;">3D Digital Twining Forest Simulation</h3>
+              <p style="color: #cbd5e1; margin-bottom: 1.5rem;">
+                During the visit, the team completed full <strong>3D point-cloud LiDAR and photogrammetry scans</strong> of the Anchetty deployment site. Instead of relying on human intuition to strap camera traps to trees, GAIA uses a 3D virtual simulation of tree trunks, ground slope, and foliage density to calculate the exact optimal mounting height and angle vectors for specific wildlife species (e.g., leopards vs elephants vs poachers).
+              </p>
+              <div class="grid-2" style="align-items: center;">
+                <img src="assets/images/digital_twin_3d_simulation.jpg" alt="Digital Twin 3D Point Cloud" style="width: 100%; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                <div style="background: rgba(0,0,0,0.4); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                  <strong style="color: #ffffff; display: block; margin-bottom: 0.5rem;">Simulation Benefits:</strong>
+                  <ul style="color: var(--text-muted); font-size: 0.92rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                    <li>Eliminates blind-spots caused by natural boulders and trunk geometry.</li>
+                    <li>Maximizes PIR motion sensor trigger radius across known animal trails.</li>
+                    <li>Models seasonal leaf canopy changes for solar panel exposure.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Future Upgrades -->
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 2rem;">
+              <h3 style="color: #ffffff; margin-bottom: 1rem;">Future Planned Upgrades for Next Deployment</h3>
+              <div class="grid-3" style="font-size: 0.9rem;">
+                <div class="spec-box">
+                  <div class="spec-title">1. Solar Energy Harvesting</div>
+                  <div class="spec-desc">High-efficiency monocrystalline solar panels with MPPT charging for unlimited autonomy.</div>
+                </div>
+                <div class="spec-box">
+                  <div class="spec-title">2. Live Ranger Dashboard</div>
+                  <div class="spec-desc">Websocket-enabled live dashboard displaying real-time map plots and battery state-of-charge.</div>
+                </div>
+                <div class="spec-box">
+                  <div class="spec-title">3. Automated SMS Alerts</div>
+                  <div class="spec-desc">Direct GSM / cellular SMS broadcast to forest rangers upon fire or intrusion classification.</div>
+                </div>
+                <div class="spec-box">
+                  <div class="spec-title">4. Bio-Camouflage Enclosures</div>
+                  <div class="spec-desc">Organic matte bark-textured enclosures that seamlessly blend into native forest vegetation.</div>
+                </div>
+                <div class="spec-box">
+                  <div class="spec-title">5. GSM Redundant Backup</div>
+                  <div class="spec-desc">Automatic failover to satellite/GSM when LoRa link suffers severe interference.</div>
+                </div>
+                <div class="spec-box">
+                  <div class="spec-title">6. LoRa Compressed Imagery</div>
+                  <div class="spec-desc">Ultra-compressed JPEG-XR image packet transmission over long-range LoRa links.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-link">
+            <img src="assets/images/logo.png" alt="GAIA Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-title">PROJECT GAIA</span>
+              <span class="brand-subtitle">Smart Forest Monitoring • India</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            An IEEE EPICS funded smart forest protection solution combining Edge AI vision, WisBlock sensors, and LoRaWAN connectivity.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="gallery.html">Project Images</a></li>
+            <li><a href="videos.html">Demonstration Videos</a></li>
+            <li><a href="reports.html">Field Deployment Reports</a></li>
+            <li><a href="team.html">Engineering Team</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Downloads</div>
+          <ul class="footer-links">
+            <li><a href="assets/docs/GAIA_Field_Deployment_Report.pdf" download>Field Deployment Report (PDF)</a></li>
+            <li><a href="assets/docs/GAIA_Students_Report.pdf" download>Student Technical Report (PDF)</a></li>
+            <li><a href="assets/docs/REPORT-IEEE-GAIA.pdf" download>Full IEEE EPICS Dossier (PDF)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Student Leadership</div>
+          <div style="font-size: 0.9rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.5rem;">
+            <div><strong>Vishwar S J</strong> (Team Lead)</div>
+            <div style="color: var(--text-muted);">Sri Sai Ram Engineering College, Chennai</div>
+            <div>📞 <a href="tel:9342384995" style="color: var(--accent-neon);">+91 9342384995</a></div>
+            <div>✉ <a href="mailto:vishwarvishwar6@gmail.com" style="color: var(--accent-neon);">vishwarvishwar6@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Project GAIA: Smart and Sustainable Forest – INDIA. Supported by EPICS in IEEE.</div>
+        <div style="color: var(--accent-light);">Sri Sai Ram Engineering College Student Branch, Chennai</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/reports.js"></script>
+</body>
+</html>

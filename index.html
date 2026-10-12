@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project GAIA | Smart and Sustainable Forest Monitoring System - INDIA</title>
+  <meta name="description" content="Project GAIA 2.0: IEEE-funded smart forest monitoring system integrating Edge AI, RAK WisBlock sensors, and LoRaWAN long-range telemetry to prevent wildfires, resolve wildlife conflicts, and stop timber theft. Developed by Sri Sai Ram Engineering College.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" id="brandLink">
+        <img src="assets/images/logo.png" alt="GAIA Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">PROJECT GAIA</span>
+          <span class="brand-subtitle">Smart & Sustainable Forest • India</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">☰</button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Project</a></li>
+          <li><a href="gallery.html" class="nav-link">Images</a></li>
+          <li><a href="videos.html" class="nav-link">Videos</a></li>
+          <li><a href="reports.html" class="nav-link">Field Reports</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="reports.html" class="nav-cta-btn">View Telemetry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-pulse"></span>
+            IEEE EPICS Funded & Field Proven
+          </div>
+          <h1 class="hero-title">
+            Protecting Forests with <span class="hero-highlight">Edge AI & LoRaWAN</span> Telemetry.
+          </h1>
+          <p class="hero-lead">
+            <strong>Gaia: Smart and Sustainable Forest – INDIA</strong> is an autonomous early-warning network engineered to detect forest fires in under 15 minutes, safeguard endangered wildlife corridors, and halt illicit timber trafficking across protected sanctuaries.
+          </p>
+          <div class="hero-actions">
+            <a href="about.html" class="btn btn-primary" id="heroLearnMoreBtn">Explore Project Architecture</a>
+            <a href="reports.html" class="btn btn-secondary" id="heroFieldReportBtn">Field Deployment Report</a>
+          </div>
+        </div>
+
+        <div class="hero-preview">
+          <div class="hero-img-frame">
+            <img src="assets/images/team_forest_field.jpg" alt="GAIA Team Deployed in Cauvery Wildlife Sanctuary">
+            <div class="hero-floating-chip">
+              <span class="badge-pulse"></span>
+              <div>
+                <strong style="color: #ffffff; font-size: 0.88rem; display: block;">Cauvery Sanctuary, Tamil Nadu</strong>
+                <span style="color: var(--text-muted); font-size: 0.75rem; font-family: var(--font-mono);">8 km LoRa Link • 24hr Field Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Impact Statistics -->
+      <div class="stat-grid" style="margin-top: 4.5rem;">
+        <div class="stat-card">
+          <div class="stat-number" data-target="6429" data-prefix="$">$6,429</div>
+          <div class="stat-label">IEEE Funding</div>
+          <div class="stat-subtext">EPICS in IEEE & IEEE Standards Association</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number" data-target="8000" data-suffix="+">8,000+</div>
+          <div class="stat-label">Estimated Impact</div>
+          <div class="stat-subtext">Community members & forest hectares protected</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number" data-target="8" data-suffix=" km">8 km</div>
+          <div class="stat-label">LoRa Transmission</div>
+          <div class="stat-subtext">Verified range over dense jungle terrain</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number" data-target="80.69" data-suffix="%">80.69%</div>
+          <div class="stat-label">Edge AI Accuracy</div>
+          <div class="stat-subtext">On-device 4-class fire & smoke classification</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Organizations Banner -->
+  <section class="partners-bar">
+    <div class="container">
+      <div class="partners-title">Collaborating Institutions & Conservation Partners</div>
+      <div class="partners-flex">
+        <div class="partner-item">
+          <span class="partner-dot"></span>
+          Sri Sai Ram Engineering College, Chennai
+        </div>
+        <div class="partner-item">
+          <span class="partner-dot"></span>
+          IEEE Standards Association (EPICS in IEEE)
+        </div>
+        <div class="partner-item">
+          <span class="partner-dot"></span>
+          Kenneth Anderson Nature Society (KANS)
+        </div>
+        <div class="partner-item">
+          <span class="partner-dot"></span>
+          Tamil Nadu Forest Department (Cauvery Wildlife Sanctuary)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Statement Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Urgent Challenges Solved</span>
+        <h2 class="section-heading">Why GAIA Was Born in the Mathigiri Forests</h2>
+        <p class="section-desc">
+          After successive ecological and human-wildlife crises devastated the Mathigiri Reserve Forest and Cauvery Wildlife Sanctuary in Hosur, India, a dedicated team of student engineers engineered an autonomous IoT & Edge AI conservation shield.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="glass-card">
+          <div class="feature-icon-box">🔥</div>
+          <h3 style="margin-bottom: 0.8rem;">Midnight Forest Wildfires</h3>
+          <p style="margin-bottom: 1rem;">
+            In January 2020, a midnight fire swept through Cauvery Wildlife Sanctuary. Due to a total lack of automated nocturnal detection, fire raged undetected for hours, ravaging indigenous flora and animal habitats before rangers could mobilize.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--accent-neon); font-family: var(--font-mono);">
+            ✓ Solved: Multi-spectral thermal, gas & AI camera nodes alert under 15 mins.
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box">🐆</div>
+          <h3 style="margin-bottom: 0.8rem;">Deadly Wildlife Intrusions</h3>
+          <p style="margin-bottom: 1rem;">
+            Severe human-animal conflicts peaked when a leopard entered rural village settlements, killing 23 domestic livestock animals (cattle, stray dogs, goats) and attacking 5 people. Meanwhile, herds of 37 elephants frequently decimate agricultural crops.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--accent-neon); font-family: var(--font-mono);">
+            ✓ Solved: PIR-activated camera traps (CT-Orion & CT-Sirius) track corridor movement.
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box">🪵</div>
+          <h3 style="margin-bottom: 0.8rem;">Sandalwood & Timber Theft</h3>
+          <p style="margin-bottom: 1rem;">
+            Rampant illegal wood trafficking targeting prized sandalwood, teak, and aged timber threatened biodiversity. Poachers operated silently in dead zones beyond normal patrol perimeters without physical deterrence.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--accent-neon); font-family: var(--font-mono);">
+            ✓ Solved: 6-axis accelerometers and vibration sensors detect chainsaw & chopping tremors.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technological Architecture Overview -->
+  <section class="section" style="background: rgba(8, 14, 10, 0.4); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Edge Technology & Hardware</span>
+        <h2 class="section-heading">Integrated Multi-Tier Sensing Architecture</h2>
+        <p class="section-desc">
+          GAIA combines subterranean soil monitoring, high-canopy atmospheric nodes, embedded Sony IMX AI vision sensors, and high-gain LoRaWAN infrastructure into an impenetrable forest monitoring network.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="glass-card">
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div class="feature-icon-box" style="flex-shrink: 0;">📡</div>
+            <div>
+              <h3>Dual-Elevation Sensor Nodes</h3>
+              <p style="margin: 0.5rem 0 1rem 0;">
+                Engineered with modular <strong>RAK WisBlock</strong> modules across two critical vantage points:
+              </p>
+              <ul style="color: var(--text-muted); font-size: 0.92rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                <li><strong>Tree Canopy Tier:</strong> BME680 gas/temp/humidity/pressure, ambient light, flame sensors.</li>
+                <li><strong>Ground Subterranean Tier:</strong> Soil moisture, soil temperature, precipitation, and seismic disturbance sensors.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div class="feature-icon-box" style="flex-shrink: 0;">🧠</div>
+            <div>
+              <h3>Edge AI Camera Traps (Sony IMX + Pi)</h3>
+              <p style="margin: 0.5rem 0 1rem 0;">
+                High-efficiency edge machine learning running on Raspberry Pi Zero 2 W and Sony IMX AI Camera modules:
+              </p>
+              <ul style="color: var(--text-muted); font-size: 0.92rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                <li><strong>4-Class Inference:</strong> Real-time detection of Fire Only, Smoke Only, Combined Fire/Smoke, and Normal.</li>
+                <li><strong>Zero Cloud Latency:</strong> Models converted to native Sony IMX binary format for ultra-low power execution.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div class="feature-icon-box" style="flex-shrink: 0;">📶</div>
+            <div>
+              <h3>Long-Range LoRaWAN Gateway</h3>
+              <p style="margin: 0.5rem 0 1rem 0;">
+                Central RAK Gateway operating in the IN865 band across 16 frequency channels equipped with dual 5.8 dBi high-gain antennas.
+              </p>
+              <ul style="color: var(--text-muted); font-size: 0.92rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                <li>Maintains robust 8 km telemetry coverage across mountainous, dense canopy terrain.</li>
+                <li>Bridges payloads over Airtel 4G LTE to The Things Stack cloud server.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div class="feature-icon-box" style="flex-shrink: 0;">🔋</div>
+            <div>
+              <h3>Custom Battery Management System (BMS)</h3>
+              <p style="margin: 0.5rem 0 1rem 0;">
+                High-safety, thermal-stable energy design engineered for harsh remote woodland conditions:
+              </p>
+              <ul style="color: var(--text-muted); font-size: 0.92rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                <li>2S LiFePO4 (6V, 6Ah 32650 cells) with MP1584 buck converters and slow-blow fuse protection.</li>
+                <li>Multi-year Saft Li-SOCl2 (3.6V, 2.6Ah) primary cells for autonomous RAK nodes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="about.html" class="btn btn-primary">Read Complete Technical Architecture &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media Highlights Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Field Visuals & Documentary</span>
+        <h2 class="section-heading">Verified Field Deployments in Action</h2>
+        <p class="section-desc">
+          Browse real telemetry captures, deployment footage, camera trap photographs, and lab assembly records from the Cauvery North Wildlife Sanctuary.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="gallery-item" onclick="window.location.href='gallery.html'">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/gateway_antenna.jpg" alt="LoRa Gateway Antenna Mast">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Infrastructure</div>
+            <div class="gallery-title">5.8 dBi High-Gain Gateway Mast</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="window.location.href='gallery.html'">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/field_node_orion.jpg" alt="CT 001 Orion Tree Mount">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Field Node</div>
+            <div class="gallery-title">CT 001 - Orion Canopy Installation</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="window.location.href='gallery.html'">
+          <div class="gallery-img-wrap">
+            <img src="assets/images/team_lab_hardware.jpg" alt="Sensor & BMS Assembly in Lab">
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-category">Hardware Lab</div>
+            <div class="gallery-title">WisBlock & BMS Circuit Fabrication</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2.5rem;">
+        <a href="gallery.html" class="btn btn-secondary">Open Image Gallery</a>
+        <a href="videos.html" class="btn btn-primary">Watch Project Video</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-link">
+            <img src="assets/images/logo.png" alt="GAIA Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-title">PROJECT GAIA</span>
+              <span class="brand-subtitle">Smart Forest Monitoring • India</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            An IEEE EPICS funded smart forest protection solution combining Edge AI vision, WisBlock sensors, and LoRaWAN connectivity.
+          </p>
+          <div class="social-links">
+            <a href="https://epics.ieee.org/#facebook" target="_blank" rel="noopener" class="social-icon-btn" title="Facebook">f</a>
+            <a href="https://epics.ieee.org/#twitter" target="_blank" rel="noopener" class="social-icon-btn" title="Twitter">t</a>
+            <a href="https://epics.ieee.org/#linkedin" target="_blank" rel="noopener" class="social-icon-btn" title="LinkedIn">in</a>
+            <a href="mailto:vishwarvishwar6@gmail.com" class="social-icon-btn" title="Email Team Lead">✉</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="gallery.html">Project Images</a></li>
+            <li><a href="videos.html">Demonstration Videos</a></li>
+            <li><a href="reports.html">Field Deployment Reports</a></li>
+            <li><a href="team.html">Engineering Team</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Downloads & Docs</div>
+          <ul class="footer-links">
+            <li><a href="assets/docs/GAIA_Field_Deployment_Report.pdf" download>Field Deployment Report (PDF)</a></li>
+            <li><a href="assets/docs/GAIA_Students_Report.pdf" download>Student Technical Report (PDF)</a></li>
+            <li><a href="assets/docs/REPORT-IEEE-GAIA.pdf" download>Full IEEE EPICS Dossier (PDF)</a></li>
+            <li><a href="reports.html#telemetry">Live Field Telemetry Logs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Student Leadership</div>
+          <div style="font-size: 0.9rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.5rem;">
+            <div><strong>Vishwar S J</strong> (Team Lead)</div>
+            <div style="color: var(--text-muted);">Sri Sai Ram Engineering College, Chennai</div>
+            <div>📞 <a href="tel:9342384995" style="color: var(--accent-neon);">+91 9342384995</a></div>
+            <div>✉ <a href="mailto:vishwarvishwar6@gmail.com" style="color: var(--accent-neon);">vishwarvishwar6@gmail.com</a></div>
+            <div style="margin-top: 0.5rem; color: var(--text-dim); font-size: 0.8rem;">
+              Partnered with KANS & Tamil Nadu Forest Dept.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Project GAIA: Smart and Sustainable Forest – INDIA. Supported by EPICS in IEEE.</div>
+        <div style="color: var(--accent-light);">Sri Sai Ram Engineering College Student Branch, Chennai</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

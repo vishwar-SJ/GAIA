@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project GAIA Videos | Demonstration & Field Deployment Films</title>
+  <meta name="description" content="Watch Project GAIA video demonstrations: full engineering walkthrough, field deployment in Cauvery Wildlife Sanctuary, and Edge AI fire detection trials.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link">
+        <img src="assets/images/logo.png" alt="GAIA Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">PROJECT GAIA</span>
+          <span class="brand-subtitle">Smart & Sustainable Forest • India</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">☰</button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Project</a></li>
+          <li><a href="gallery.html" class="nav-link">Images</a></li>
+          <li><a href="videos.html" class="nav-link active">Videos</a></li>
+          <li><a href="reports.html" class="nav-link">Field Reports</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="reports.html" class="nav-cta-btn">View Telemetry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section" style="padding-top: 5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-subtle); background: rgba(9, 15, 11, 0.5);">
+    <div class="container">
+      <div style="max-width: 800px;">
+        <span class="badge-pill" style="margin-bottom: 1rem;">
+          <span class="badge-pulse"></span>
+          Cinematic Demonstration & Field Footage
+        </span>
+        <h1 style="margin-bottom: 1rem;">Project Video Demonstrations</h1>
+        <p style="font-size: 1.15rem; color: #cbd5e1;">
+          Explore video documentation of Project GAIA in operation: from lab circuit engineering to rugged canopy installations and real-time Edge AI fire inference.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Video Showcase -->
+  <section class="section">
+    <div class="container">
+      <div class="video-showcase-wrap">
+        <video 
+          id="mainVideo" 
+          class="main-video-player" 
+          controls 
+          preload="metadata" 
+          poster="assets/images/team_forest_field.jpg">
+          <source src="assets/videos/gaia_project_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Video Meta Details -->
+      <div class="glass-card" style="margin-top: 1.75rem; border-radius: var(--radius-md);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <span class="badge-pill" id="currentVideoBadge" style="margin-bottom: 0.5rem;">Main Project Film</span>
+            <h2 id="currentVideoTitle" style="font-size: 1.6rem; color: #ffffff;">GAIA 2.0: Full Project Demonstration & Overview</h2>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-neon); background: rgba(16, 185, 129, 0.1); padding: 6px 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            HD 1080p • MP4 Stream
+          </div>
+        </div>
+        <p id="currentVideoDesc" style="color: #cbd5e1; font-size: 1rem; line-height: 1.7;">
+          Comprehensive engineering walkthrough of the GAIA smart forest monitoring system. Highlights multi-sensor WisBlock nodes, Raspberry Pi edge vision cameras, LoRaWAN gateway integration, and real-time field deployments in Cauvery Wildlife Sanctuary.
+        </p>
+      </div>
+
+      <!-- Playlist Selection -->
+      <div style="margin-top: 3.5rem;">
+        <span class="section-tag">Select Demonstration Video</span>
+        <h3 style="margin-bottom: 1.5rem;">Video Archive & Field Clips</h3>
+
+        <div class="video-playlist-grid">
+          <!-- Card 1 -->
+          <div class="video-thumb-card active" data-video-key="gaia_project_video">
+            <div class="video-card-badge">
+              <span class="badge-pulse"></span>
+              <span>Primary Demo</span>
+            </div>
+            <h4 style="color: #ffffff; font-size: 1.05rem;">GAIA 2.0: Project Demonstration</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+              Complete overview covering student engineering, sensor nodes, Edge AI classification, and IEEE EPICS partnership.
+            </p>
+            <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-light);">
+              Duration: Full Feature • Click to Play
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="video-thumb-card" data-video-key="gaia_field_clip">
+            <div class="video-card-badge">
+              <span class="badge-pulse"></span>
+              <span>Sanctuary Field Deployment</span>
+            </div>
+            <h4 style="color: #ffffff; font-size: 1.05rem;">Cauvery Sanctuary Field Clip</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+              Authentic on-site deployment clip recorded in Anchetty Reserve Forest, verifying long-range LoRa transmission over 8 km.
+            </p>
+            <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-light);">
+              Location: Anchetty R.F • Click to Play
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="video-thumb-card" data-video-key="wildfire">
+            <div class="video-card-badge">
+              <span class="badge-pulse"></span>
+              <span>Machine Learning Inference</span>
+            </div>
+            <h4 style="color: #ffffff; font-size: 1.05rem;">Edge AI Fire & Smoke Detection</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+              Video analysis demo showing real-time Sony IMX AI inference for early fire and smoke detection with 80.69% accuracy.
+            </p>
+            <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-light);">
+              Model: PyTorch & IMX • Click to Play
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Breakdown of the Footage -->
+      <div class="glass-card" style="margin-top: 4rem;">
+        <span class="section-tag">Key Video Insights</span>
+        <h3 style="margin-bottom: 1.5rem;">What the Demonstrations Showcase</h3>
+
+        <div class="grid-3">
+          <div>
+            <h4 style="color: var(--accent-neon); margin-bottom: 0.5rem;">1. Rapid Edge AI Inference</h4>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+              The Sony IMX AI camera captures frames every 15 minutes or when awakened by PIR motion sensors, running on-device PyTorch-converted binary models without requiring high-bandwidth video uplinks.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="color: var(--accent-neon); margin-bottom: 0.5rem;">2. 8 km Rugged LoRa Transmission</h4>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+              Watch the gateway receiver process packet telemetry in real-time across dense foliage and severe elevation changes between the Anchetty valley and high ridge towers.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="color: var(--accent-neon); margin-bottom: 0.5rem;">3. Extreme Battery Autonomy</h4>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+              Observe how the custom 2S LiFePO4 battery pack and MP1584 buck converters maintain a steady 5.1V rail, smoothly powering the Raspberry Pi through active and deep-sleep states.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-link">
+            <img src="assets/images/logo.png" alt="GAIA Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-title">PROJECT GAIA</span>
+              <span class="brand-subtitle">Smart Forest Monitoring • India</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            An IEEE EPICS funded smart forest protection solution combining Edge AI vision, WisBlock sensors, and LoRaWAN connectivity.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="gallery.html">Project Images</a></li>
+            <li><a href="videos.html">Demonstration Videos</a></li>
+            <li><a href="reports.html">Field Deployment Reports</a></li>
+            <li><a href="team.html">Engineering Team</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Downloads</div>
+          <ul class="footer-links">
+            <li><a href="assets/docs/GAIA_Field_Deployment_Report.pdf" download>Field Deployment Report (PDF)</a></li>
+            <li><a href="assets/docs/GAIA_Students_Report.pdf" download>Student Technical Report (PDF)</a></li>
+            <li><a href="assets/docs/REPORT-IEEE-GAIA.pdf" download>Full IEEE EPICS Dossier (PDF)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Student Leadership</div>
+          <div style="font-size: 0.9rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.5rem;">
+            <div><strong>Vishwar S J</strong> (Team Lead)</div>
+            <div style="color: var(--text-muted);">Sri Sai Ram Engineering College, Chennai</div>
+            <div>📞 <a href="tel:9342384995" style="color: var(--accent-neon);">+91 9342384995</a></div>
+            <div>✉ <a href="mailto:vishwarvishwar6@gmail.com" style="color: var(--accent-neon);">vishwarvishwar6@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Project GAIA: Smart and Sustainable Forest – INDIA. Supported by EPICS in IEEE.</div>
+        <div style="color: var(--accent-light);">Sri Sai Ram Engineering College Student Branch, Chennai</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/video.js"></script>
+</body>
+</html>
